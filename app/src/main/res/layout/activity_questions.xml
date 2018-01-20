@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/QuestionsActivity_CoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fefeff">
+
+        <TextView
+            android:id="@+id/QuestionsActivity_TextView_Empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/no_questions_to_show"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/QuestionsActivity_RecyclerView_Questions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/QuestionsActivity_FloatingActionMenu_NewQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|end"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            fab:menu_animationDelayPerItem="50"
+            fab:menu_backgroundColor="#5000"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:menu_colorPressed="@color/colorPrimary"
+            fab:menu_colorRipple="#eee"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/fab_add"
+            fab:menu_labels_colorNormal="#333"
+            fab:menu_labels_colorPressed="#444"
+            fab:menu_labels_colorRipple="#eee"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_singleLine="true"
+            fab:menu_labels_textColor="@android:color/white"
+            fab:menu_labels_textSize="15sp"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="#ccc"
+            fab:menu_shadowRadius="2dp"
+            fab:menu_shadowYOffset="3dp">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/QuestionsActivity_FloatingActionButton_MultiChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_box_white_24dp"
+                fab:fab_colorNormal="#13ddbb"
+                fab:fab_colorPressed="#13ddbb"
+                fab:fab_colorRipple="#eee"
+                fab:fab_label="@string/multiple_answers"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/QuestionsActivity_FloatingActionButton_SingleChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_radio_button_checked_white_24dp"
+                fab:fab_colorNormal="#13bbbb"
+                fab:fab_colorPressed="#13bbbb"
+                fab:fab_colorRipple="#eee"
+                fab:fab_label="@string/single_answer"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/QuestionsActivity_FloatingActionButton_Essay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_message_white_24dp"
+                fab:fab_colorNormal="#1399cc"
+                fab:fab_colorPressed="#1399cc"
+                fab:fab_colorRipple="#eee"
+                fab:fab_label="@string/essay"
+                fab:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

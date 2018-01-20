@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Infinity survey</string>
+    <string name="app_slogan">a place for all surveys</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="login">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="re_password">Re-Password</string>
+    <string name="birth_date">Birth date</string>
+    <string name="register">Register</string>
+    <string name="questions">Questions</string>
+    <string name="single_answer">Single answer</string>
+    <string name="multiple_answers">Multiple answers</string>
+    <string name="new_question">New question</string>
+    <string name="edit_question">Edit question</string>
+    <string name="essay">Essay</string>
+    <string name="question">Question</string>
+    <string name="answer...">Answer &#8230;</string>
+    <string name="add_answer">Add answer</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="no_questions_to_show">No questions to show &#8230;</string>
+    <string name="warning">Warning</string>
+    <string name="deleting_question_message">Are you sure to delete question?</string>
+    <string name="yes">Yes</string>
+    <string name="delete_hint">Swipe to remove question</string>
+    <string name="register_success">Register success</string>
+    <string name="empty_first_name_message">Please enter your first name</string>
+    <string name="empty_last_name_message">Please enter your last name</string>
+    <string name="invalid_email_message">Please enter a valid email</string>
+    <string name="invalid_password_message">Password must be 8 characters or more</string>
+    <string name="password_mismatch_message">Password mismatch</string>
+    <string name="empty_password_message">Please enter your password</string>
+    <string name="used_email_message">Email already used</string>
+    <string name="register_failed">Register failed</string>
+    <string name="please_wait">Please wait &#8230;</string>
+    <string name="current_user">Current User</string>
+    <string name="logout">Logout</string>
+    <string name="login_failed">Failed to login</string>
+    <string name="invalid_email_or_password">Invalid email or incorrect password</string>
+    <string name="create_account">Create account</string>
+    <string name="already_have_account">Already have an account</string>
+    <string name="or">Or</string>
+    <string name="logout_confirmation_message">Are you sure to logout?</string>
+    <string name="empty_question_message">Please add your question</string>
+    <string name="less_than_two_answers_message">Please add at least two answers</string>tion
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string name="home">Home</string>
+
+</resources>
