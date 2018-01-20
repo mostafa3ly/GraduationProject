@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.mostafa.graduationproject.api.response.GetSurveyByIdDTO;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,9 +20,14 @@ public class SurveysAdapter extends RecyclerView.Adapter<SurveysAdapter.SurveyVi
     private List<GetSurveyByIdDTO> surveysList;
 
 
-    SurveysAdapter(List<GetSurveyByIdDTO> surveysList){
-        surveysList.clear();
+
+    SurveysAdapter(){
+        surveysList = new ArrayList<>();
+    }
+
+    public void addList(List<GetSurveyByIdDTO> surveysList){
         this.surveysList.addAll(surveysList);
+        notifyDataSetChanged();
     }
 
     @Override
@@ -37,7 +43,7 @@ public class SurveysAdapter extends RecyclerView.Adapter<SurveysAdapter.SurveyVi
         GetSurveyByIdDTO survey = surveysList.get(position);
 
         holder.surveyTitleTextView.setText(survey.getTitle());
-        holder.questionsCountTextView.setText(survey.getQuestions().size() + "questions");
+        holder.questionsCountTextView.setText(survey.getQuestions().size() + " questions");
     }
 
     @Override
